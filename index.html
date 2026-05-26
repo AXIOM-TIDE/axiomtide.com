@@ -301,34 +301,26 @@
     }
 
     .product-logo-wrap {
-      width: 56px;
-      height: 56px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+      margin-bottom: 4px;
     }
 
+    /* Square logo (CONK) */
     .product-logo {
       width: 56px;
       height: 56px;
       object-fit: contain;
     }
 
-    /* Monogram badge for products without a logo image */
-    .product-monogram {
-      width: 56px;
-      height: 56px;
-      background: var(--teal-dim);
-      border: 1px solid var(--border-hi);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--teal);
-      letter-spacing: 0.04em;
-      flex-shrink: 0;
+    /* Landscape logo (TME, AgentSpark) */
+    .product-logo-wide {
+      height: 72px;
+      width: auto;
+      max-width: 200px;
+      object-fit: contain;
+      border-radius: 4px;
     }
 
     .product-name {
@@ -500,7 +492,7 @@
       <!-- The Machine Economy -->
       <a href="https://themachineeconomy.io" class="product-card">
         <div class="product-logo-wrap">
-          <div class="product-monogram">TME</div>
+          <img src="/tme-logo.jpg" alt="The Machine Economy" class="product-logo-wide" />
         </div>
         <div class="product-name">The Machine Economy</div>
         <p class="product-desc">
@@ -515,7 +507,7 @@
       <!-- AgentSpark -->
       <a href="https://agentspark.network" class="product-card">
         <div class="product-logo-wrap">
-          <div class="product-monogram">AS</div>
+          <img src="/agentspark-logo.jpg" alt="AgentSpark" class="product-logo-wide" />
         </div>
         <div class="product-name">AgentSpark</div>
         <p class="product-desc">
